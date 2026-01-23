@@ -1,0 +1,21 @@
+{{- $scratch := newScratch }}
+
+{{- /* 1. La Date (Format: May 1, 2025) */ -}}
+{{- if not .Date.IsZero -}}
+    {{- $scratch.Add "meta" (slice (printf "Date: %s" (.Date.Format "January 2, 2006"))) -}}
+{{- end -}}
+
+{{- /* 2. Le Temps de lecture (Format: Estimated Reading Time: 40 min) */ -}}
+{{- if (.Param "ShowReadingTime") -}}
+    {{- $scratch.Add "meta" (slice (printf "Estimated Reading Time: %d min" .ReadingTime)) -}}
+{{- end -}}
+
+{{- /* 3. L'Auteur (Format: Author: Boris) */ -}}
+{{- if .Params.author -}}
+    {{- $scratch.Add "meta" (slice (printf "Author: %s" .Params.author)) -}}
+{{- end -}}
+
+{{- /* Affichage avec la couleur grise et les séparateurs | */ -}}
+<span style="color: #888; font-size: 14px;">
+    {{- delimit ($scratch.Get "meta") " | " -}}
+</span>

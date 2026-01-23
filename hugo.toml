@@ -1,0 +1,85 @@
+baseURL = "https://votre-pseudo.github.io/"
+title = "Boris'BLog"
+theme = "PaperMod"
+languageCode = "fr-fr"
+  
+[params]
+    ShowReadingTime = true
+    disableShare =  false
+    defaultTheme = "auto" # ou "dark" pour le mode sombre par défaut
+    [params.profileMode]
+        enabled = false
+    [params.homeInfoParams]
+    title = "👋 Bienvenue dans B'BLog" # Le gros titre
+    content = """
+    Data & AI Student | Boris TAKOU KENNE
+
+    Bonjour, c'est Boris. Je documente mes notes d'apprentissage...
+    Vu le nombre de fautes de frappe, vous devinerez que c'est bien moi qui écris 
+    et non ChatGPT😉.    
+    """
+        # Les icônes sociaux (comme sur la capture)
+        [[params.socialIcons]]
+            name = "github"
+            url = "https://github.com/Takou07"
+        [[params.socialIcons]]
+            name = "linkedin"
+            url = "https://www.linkedin.com/in/boris-takou-kenne-948895253/"
+        [[params.socialIcons]]
+            name = "x" # ou "x" si vous préférez le nouveau logo
+            url = "https://x.com/boris_takou"
+        [[params.socialIcons]]
+            name = "email"
+            url = "mailto:takouboris79@gmail.com"
+
+# --- LE MENU (En haut à droite) ---
+
+[[menu.main]]
+    identifier = "posts"
+    name = "Posts"
+    url = "/"
+    weight = 10
+
+[[menu.main]]
+    identifier = "archives"
+    name = "Archive"
+    url = "/archives"
+    weight = 20
+
+[[menu.main]]
+    identifier = "projets"
+    name = "Projets" # C'est votre nouvel onglet !
+    url = "/projets"
+    weight = 30
+
+[[menu.main]]
+    identifier = "recherche"
+    name = "Rechercher"
+    url = "/search"
+    weight = 40
+
+[[menu.main]]
+    identifier = "tags"
+    name = "Tags"
+    url = "/tags/"
+    weight = 50
+
+[[menu.main]]
+    identifier = "faq"
+    name = "FAQ"
+    url = "/faq/"
+    weight = 60
+    
+# Ajoutez ceci à la racine de votre fichier hugo.toml (pas dans [params])
+[outputs]
+    home = ["HTML", "RSS", "JSON"]
+
+[taxonomies]
+    category = "categories"
+    tag = "tags"
+
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
