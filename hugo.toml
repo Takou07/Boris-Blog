@@ -37,6 +37,9 @@ languageCode = "fr-fr"
         [[params.socialIcons]]
             name = "email"
             url = "mailto:takouboris79@gmail.com"
+        [[params.socialIcons]]
+            name = "credly"
+            url = "https://www.credly.com/users/boris-takou"  # Mettez votre vrai lien ici
 
 # --- LE MENU (En haut à droite) ---
 
