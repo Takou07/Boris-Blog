@@ -4,6 +4,7 @@ url: "/faq/"
 summary: "Foire Aux Questions"
 hidemeta: true        # Cache la date et l'auteur (plus propre)
 disableShare: true    # Cache les boutons de partage en bas
+searchHidden: true
 ---
 
 **Q: Comment être informé des nouveaux articles ?** <br>
