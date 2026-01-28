@@ -1,6 +1,6 @@
 ---
-title: "Mon premier article"
-tags: ["Data Engineering", "Python"]
+title: "Panorama des bases de données : SQL, NoSQL"
+tags: ["Databases", "NoSQL" , "MongoDB" , "Document-oriented Database" , "SQL"]
 date: 2026-01-23
 author: "Boris TAKOU KENNE"
 showToc: true       # Affiche la barre "Table of Contents"
@@ -12,18 +12,15 @@ disableShare: false
 
 ## Motivation
 
-Enabling models to think for longer can be motivated in a few different ways.
+Les bases de données, et en particulier les modèles de données, sont des éléments
+essentiels dans le développement des logiciels et des solutions informatiques.
 
-Ici commence votre texte. Comme vous avez activé `showToc: true` ci-dessus, Hugo va scanner tous vos titres (`##`) et sous-titres (`###`) pour générer automatiquement le menu déroulant.
+Dans mon parcours en Data & Intelligence Artificielle, je remarque l'importance accordée aux données tout au long de leur cycle de vie. Cette reflexion m'a amené à échanger avec l'un de mes encadrants sur l'importance réelle des données dans des applications concrètes, sa réponse a parfaitement résumé ma pensée : 
 
-### Un sous-titre exemple
+> "Les données ont un impact profond : non seulement sur la façon dont le logiciel est écrit, mais aussi sur la façon dont nous envisageons le problème que nous résolvons."
 
-L'architecture de PaperMod est géniale pour ça.
+Avant d'aller plus loin dans des sujets comme le data engineering, machine learning etc, il m'a semblé essentiel de comprendre réellement qu'est ce qu'une donnée et comment la répresenter en fonction des diverses applications dans le monde professionnel.
+
+Cet article est une intro à la valeur fondamentale de tout nos systèmes modernes : <a href = https://fr.wikipedia.org/wiki/Base_de_donn%C3%A9es target="_blank"  style="color: blue">les bases de données </a>. 
 
 ## Method
-
-Voici la deuxième partie. Notez que le temps de lecture ("Estimated Reading Time") est calculé automatiquement par Hugo, vous n'avez pas besoin de l'écrire manuellement !
-
-> Special thanks to John Schulman for a lot of super valuable feedback...
-
-Vous pouvez utiliser des citations comme celle-ci avec le signe `>`.
