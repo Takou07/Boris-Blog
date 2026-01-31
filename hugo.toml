@@ -56,9 +56,9 @@ languageCode = "fr-fr"
     weight = 20
 
 [[menu.main]]
-    identifier = "Projets"
+    identifier = "projets"
     name = "Projets" # C'est votre nouvel onglet !
-    url = "/Projets"
+    url = "/projets"
     weight = 30
 
 [[menu.main]]
