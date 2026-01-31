@@ -1,0 +1,58 @@
+# Script pour déployer Hugo sur GitHub Pages
+name: Deploy to GitHub Pages
+
+on:
+  push:
+    branches:
+      - main  # Vérifiez que votre branche s'appelle bien "main" (ou "master")
+
+# Permissions pour permettre au bot de modifier la page
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+# Permet un seul déploiement à la fois
+concurrency:
+  group: "pages"
+  cancel-in-progress: false
+
+# La configuration par défaut pour Hugo
+defaults:
+  run:
+    shell: bash
+
+jobs:
+  # Étape 1 : Construire le site
+  build:
+    runs-on: ubuntu-latest
+    env:
+      HUGO_VERSION: 0.121.2 # Version récente de Hugo
+    steps:
+      - name: Install Hugo CLI
+        run: |
+          wget -O ${{ runner.temp }}/hugo.deb https://github.com/gohugoio/hugo/releases/download/v${HUGO_VERSION}/hugo_extended_${HUGO_VERSION}_linux-amd64.deb \
+          && sudo dpkg -i ${{ runner.temp }}/hugo.deb
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          submodules: recursive
+      - name: Build with Hugo
+        run: hugo --minify
+
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: ./public
+
+  # Étape 2 : Mettre en ligne
+  deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    needs: build
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
