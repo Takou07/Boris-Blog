@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>SQL on Boris&#39;BLog</title>
-    <link>http://localhost:1313/tags/sql/</link>
+    <link>http://localhost:1313/Boris-Blog/tags/sql/</link>
     <description>Recent content in SQL on Boris&#39;BLog</description>
     <generator>Hugo -- 0.154.5</generator>
     <language>fr-fr</language>
     <lastBuildDate>Fri, 23 Jan 2026 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/sql/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/Boris-Blog/tags/sql/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Panorama des bases de données : SQL, NoSQL</title>
-      <link>http://localhost:1313/posts/mon-premier-article/</link>
+      <link>http://localhost:1313/Boris-Blog/posts/mon-premier-article/</link>
       <pubDate>Fri, 23 Jan 2026 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/mon-premier-article/</guid>
+      <guid>http://localhost:1313/Boris-Blog/posts/mon-premier-article/</guid>
       <description>&lt;h2 id=&#34;motivation&#34;&gt;Motivation&lt;/h2&gt;
 &lt;p&gt;Les bases de données, et en particulier les modèles de données, sont des éléments
 essentiels dans le développement des logiciels et des solutions informatiques.&lt;/p&gt;

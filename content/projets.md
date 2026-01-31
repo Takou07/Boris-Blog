@@ -1,6 +1,6 @@
 ---
-title: "Projets"
-url: "/Projets/"
+title: "Mes Projets"
+url: "/Projets"
 summary: "Portfolio de mes projets Data & AI"
 hidemeta: true
 disableShare: true
