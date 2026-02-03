@@ -7,7 +7,7 @@ languageCode = "fr-fr"
     favicon = "favicon.ico"
     favicon16x16 = "favicon-16x16.png"
     favicon32x32 = "favicon-32x32.png"
-    apple_touch_icon = "apple_touch_icon.png"
+    apple_touch_icon = "a; pple_touch_icon.png"
   
 [params]
     ShowReadingTime = true
@@ -40,6 +40,9 @@ languageCode = "fr-fr"
         [[params.socialIcons]]
             name = "credly"
             url = "https://www.credly.com/users/boris-takou"  # Mettez votre vrai lien ici
+        [[params.socialIcons]]
+            name = "medium"
+            url = "https://medium.com/@takouboris79"
 
 # --- LE MENU (En haut à droite) ---
 
